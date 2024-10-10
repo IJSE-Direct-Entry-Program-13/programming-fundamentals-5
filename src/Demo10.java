@@ -4,9 +4,9 @@ void main(){
 
 }
 
-//<T extends Serializable & Comparable<? extends Serializable>> void myMethod(T t){}
+<T extends Serializable & Comparable<? extends Serializable>> void myMethod(T t){}
 //
-//<K extends Comparable<? super Serializable> & Serializable> void myMethod(K k){}
+<K extends Comparable<? super Serializable> & Serializable> void myMethod(K k){}
 
 // =====================================================
 
@@ -23,14 +23,14 @@ void main(){
 //========================================================
 
 //<I,T extends Serializable & Comparable<I>> void print(T t){}
-//
+////
 //<K,T extends Serializable & Comparable<K>> void print(T t){}
 
 //========================================================
 
 //<T extends Serializable & Comparable> void print(T t){}
 
-//<T extends Serializable & Comparable<?>> void print(T t){}
+//<K extends Serializable & Comparable<?>> void print(K t){}
 //<T extends Comparable & Serializable> void print(T t){}
 //<T extends Comparable<?> & Serializable> void print(T t){}
 
@@ -41,11 +41,11 @@ void main(){
 //<T extends Serializable & Comparable<? super Serializable>> void print(T t){}
 //<T extends Comparable<? super Serializable> & Serializable > void print(T t){}
 //<T extends Comparable<? extends Serializable> & Serializable > void print(T t){}
-// <T extends Comparable & Serializable> void print(T t){}
+// <K extends Comparable & Serializable> void print(K t){}
 
 //========================================================
 
-<T extends Comparable> void print(T t){}
-<K extends Comparable<?>> void print(K k){}
+//<T extends Comparable> void print(T t){}
+//<K extends Comparable<?>> void print(K k){}
 //<K extends Comparable<? super Serializable>> void print(K k){}
 //<K extends Comparable<? extends Serializable>> void print(K k){}
